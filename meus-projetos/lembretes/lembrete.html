@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<!--
+    Informa ao navegador que estamos usando HTML5.
+    É sempre uma boa prática colocar isso no começo.
+-->
+
+<html lang="pt-br">
+
+<!--
+    <html> é o elemento que engloba toda a página.
+
+    lang="pt-br" informa que o conteúdo está em português do Brasil.
+    Isso ajuda navegadores, leitores de tela e mecanismos de busca.
+-->
+
+<head>
+
+    <!--
+        Define a codificação dos caracteres.
+
+        UTF-8 permite usar normalmente:
+        ç, ã, é, ó, etc.
+    -->
+    <meta charset="UTF-8">
+
+
+    <!--
+        Faz a página se adaptar a celulares, tablets e computadores.
+
+        width=device-width
+        → usa a largura da tela do dispositivo.
+
+        initial-scale=1.0
+        → começa com zoom de 100%.
+
+        ⚠️ Essa linha é MUITO importante para páginas responsivas.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--
+        Define o ícone que aparece na aba do navegador.
+
+        rel="shortcut icon"
+        → informa que é um favicon.
+
+        href="..."
+        → caminho da imagem.
+
+        type="image/x-icon"
+        → informa o tipo do arquivo.
+    -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+
+    <!--
+        <title> define o nome que aparece na aba do navegador.
+    -->
+    <title>Como Surgiu o mascote do android?</title>
+
+
+    <!--
+        ⚠️ Você colocou OUTRO favicon aqui.
+
+        Não precisa dos dois.
+
+        Pode deixar somente um <link> de favicon.
+    -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!--
+        Conecta este arquivo HTML ao arquivo CSS.
+
+        href="estilo/style.css"
+        → indica onde está o arquivo CSS.
+
+        Assim o HTML recebe toda a estilização que você fez.
+    -->
+    <link rel="stylesheet" href="estilo/style.css">
+
+</head>
+
+
+<body>
+
+    <!--
+        <body> contém tudo aquilo que aparece na página.
+    -->
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <!--
+            <header> representa o cabeçalho da página.
+
+            Normalmente usamos para:
+            - título
+            - logo
+            - apresentação
+            - informações iniciais
+        -->
+
+        <h1>Curiosidade de Tecnologia</h1>
+
+        <!--
+            <h1> é o título principal.
+
+            Normalmente temos um <h1> principal para representar
+            o assunto mais importante daquela página.
+        -->
+
+        <p>
+            Tudo aquilo que você sempre quis saber sobre o mundo Tech,
+            em um unico lugar
+        </p>
+
+        <!--
+            <p> representa um parágrafo de texto.
+        -->
+
+    </header>
+
+
+    <!-- ================= NAV ================= -->
+
+    <nav>
+
+        <!--
+            <nav> representa uma área de navegação.
+
+            É onde normalmente colocamos links para:
+            - Home
+            - Notícias
+            - Contato
+            - Outras páginas
+            etc.
+        -->
+
+
+        <a href="#">Home</a>
+
+        <!--
+            <a> cria um link.
+
+            href="#" é um link temporário.
+            O # normalmente não leva para outra página.
+
+            Exemplo de link real:
+
+            <a href="index.html">Home</a>
+        -->
+
+
+        <a href="#">Noticias</a>
+
+        <a href="#">Curiosidades</a>
+
+        <a href="#">Fale conosco</a>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!--
+            <main> representa o conteúdo PRINCIPAL da página.
+
+            Deve conter aquilo que realmente é o assunto principal
+            daquela página.
+        -->
+
+
+        <article>
+
+            <!--
+                <article> representa um conteúdo independente.
+
+                É muito usado para:
+                - artigos
+                - notícias
+                - posts
+                - matérias
+
+                Aqui faz sentido porque sua página é um artigo.
+            -->
+
+
+            <h1>História do Mascote do Android</h1>
+
+            <!--
+                Título principal do artigo.
+            -->
+
+
+            <p>
+                Provavelmente você sabe que o sistema operacional
+                <strong>Android</strong>, mantido pelo <strong>Google</strong>
+                é um dos mais utilizados para dispositivos móveis em todo
+                o mundo.
+            </p>
+
+            <!--
+                <strong> dá importância ao texto.
+
+                Normalmente aparece em negrito.
+
+                Exemplo:
+
+                <strong>Android</strong>
+
+                → Android fica destacado.
+            -->
+
+
+            <h2>A primeira versão</h2>
+
+            <!--
+                <h2> representa um subtítulo.
+
+                Use h2 para dividir o conteúdo principal em seções.
+            -->
+
+
+            <p>
+                A primeira tentativa de criar um mascote surgiu em 2007
+                e veio de um desenvolvedor chamado
+
+                <a
+                    href="https://ausdroid.net/news/2013/01/04/dan-morrill-shows-us-the-android-mascots-that-could-have-been/"
+                    target="_blank"
+                    class="externo"
+                >
+                    Dan Morrill
+                </a>.
+            </p>
+
+            <!--
+                Aqui temos um link.
+
+                href
+                → endereço para onde o link leva.
+
+                target="_blank"
+                → abre o link em uma nova aba.
+
+                class="externo"
+                → cria uma classe chamada "externo".
+
+                Essa classe é usada no CSS para colocar o símbolo
+                de link externo depois do texto.
+            -->
+
+
+            <p>
+                A primeira tentativa de criar um mascote surgiu em 2007
+                e veio de um desenvolvedor chamado
+                <a
+                    href="https://ausdroid.net/news/2013/01/04/dan-morrill-shows-us-the-android-mascots-that-could-have-been/"
+                    target="_blank"
+                    class="externo"
+                >
+                    Dan Morrill
+                </a>.
+            </p>
+
+
+            <!-- ================= PICTURE ================= -->
+
+            <picture>
+
+                <!--
+                    <picture> permite usar imagens diferentes dependendo
+                    do tamanho da tela.
+
+                    É muito útil para sites responsivos.
+                -->
+
+
+                <source
+                    media="(max-width: 670px)"
+                    srcset="imagens/dan-droids-pq.png"
+                >
+
+                <!--
+                    Se a tela tiver no máximo 670px de largura,
+                    o navegador pode usar esta imagem menor.
+
+                    max-width: 670px
+                    → telas de até 670px.
+
+                    srcset
+                    → imagem alternativa.
+                -->
+
+
+                <img
+                    src="imagens/dan-droids.png"
+                    alt="Primeiro mascote do android"
+                >
+
+                <!--
+                    <img> mostra uma imagem.
+
+                    src
+                    → caminho da imagem.
+
+                    alt
+                    → texto alternativo.
+
+                    O alt é importante para:
+                    - acessibilidade
+                    - leitores de tela
+                    - quando a imagem não carrega
+                -->
+
+            </picture>
+
+
+            <p>
+                Essa primeira versão bizarra até foi batizada em homenagem
+                ao seu criador: seriam os <strong>Dandroids</strong>.
+            </p>
+
+
+            <!-- ================= SEGUNDA SEÇÃO ================= -->
+
+            <h2>Surge um novo mascote</h2>
+
+
+            <p>
+                A ideia de ter um mascote foi amadurecendo e a missão
+                foi passada para uma profissional da área.
+            </p>
+
+
+            <picture>
+
+                <!--
+                    Novamente usamos <picture> para trocar a imagem
+                    dependendo do tamanho da tela.
+                -->
+
+                <source
+                    media="(max-width: 670px)"
+                    srcset="imagens/irina-blok-pq.jpg"
+                >
+
+                <img
+                    src="imagens/irina-blok.jpg"
+                    alt="Irina Blok, criadora do Bugdroid"
+                >
+
+            </picture>
+
+
+            <p>
+                A ideia principal da Irina era representar tudo
+                graficamente com poucos traços e de forma mais chapada.
+            </p>
+
+
+            <!--
+                Aqui usamos uma imagem normal.
+            -->
+
+            <img
+                src="imagens/bugdroid.png"
+                class="pequena"
+                alt=""
+            >
+
+            <!--
+                class="pequena"
+
+                Essa imagem recebeu a classe "pequena".
+
+                No seu CSS você fez:
+
+                main img.pequena {
+                    max-width: 350px;
+                    display: block;
+                    margin: auto;
+                }
+
+                Portanto, essa imagem terá um comportamento
+                diferente das outras imagens.
+
+                ⚠️ O alt está vazio.
+
+                Se a imagem tiver importância para o conteúdo,
+                seria melhor colocar uma descrição.
+            -->
+
+
+            <p>
+                A principal inspiração para os traços do novo
+                <strong>Bugdroid</strong> veio daqueles bonequinhos
+                que ilustram portas de banheiro.
+            </p>
+
+
+            <!-- ================= VÍDEO ================= -->
+
+            <div class="video">
+
+                <!--
+                    <div> é uma caixa genérica.
+
+                    Aqui ela recebeu:
+
+                    class="video"
+
+                    Essa classe permite estilizar essa div
+                    especificamente no CSS.
+                -->
+
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/l2UDgpLz20M?si=eeQ-mzmdgzUW8_Cv"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+
+                <!--
+                    <iframe> permite incorporar outro conteúdo
+                    dentro da sua página.
+
+                    Nesse caso:
+                    → um vídeo do YouTube.
+
+                    width
+                    → largura inicial.
+
+                    height
+                    → altura inicial.
+
+                    src
+                    → endereço do vídeo.
+
+                    title
+                    → descrição do iframe.
+
+                    allowfullscreen
+                    → permite abrir em tela cheia.
+                -->
+
+            </div>
+
+
+            <!-- ================= ASIDE ================= -->
+
+            <aside>
+
+                <!--
+                    <aside> representa um conteúdo complementar.
+
+                    Não é o conteúdo principal.
+
+                    Exemplos:
+                    - curiosidades
+                    - dicas
+                    - informações extras
+                    - anúncios
+                    - links relacionados
+
+                    No seu projeto:
+                    → "Quer aprender mais?"
+                -->
+
+
+                <h3>Quer aprender mais?</h3>
+
+                <!--
+                    <h3> é um subtítulo menor.
+
+                    Aqui ele representa o título da caixa do aside.
+                -->
+
+
+                <p>
+                    Outro assunto curioso em relação ao Android é que
+                    cada versão sempre foi nomeada em homenagem a um doce.
+                </p>
+
+
+                <!-- ================= LISTA ================= -->
+
+                <ul>
+
+                    <!--
+                        <ul> = Unordered List
+                        Lista NÃO ordenada.
+
+                        Normalmente aparece com bolinhas.
+
+                        Exemplo:
+
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    -->
+
+
+                    <li>
+                        1.5 -
+                        <abbr title="Bolo de copo">Cupcake</abbr>
+                    </li>
+
+                    <!--
+                        <li> = item da lista.
+
+                        <abbr> = abreviação.
+
+                        title="..."
+                        → quando o usuário passa o mouse,
+                        aparece uma explicação.
+                    -->
+
+
+                    <li>
+                        1.6 -
+                        <abbr title="Rosquinha">Dunut</abbr>
+                    </li>
+
+                    <li>
+                        3.0 -
+                        <abbr title="Bomba">Eclair</abbr>
+                    </li>
+
+                    <li>
+                        2.2 -
+                        <abbr title="Iogurte Congelado">Froyo</abbr>
+                    </li>
+
+                    <li>
+                        2.3 -
+                        <abbr title="Biscoito de gengibre">
+                            Gingerbread
+                        </abbr>
+                    </li>
+
+                    <li>
+                        3.0 -
+                        <abbr title="Favo de Mel">
+                            Honeycomb
+                        </abbr>
+                    </li>
+
+                    <li>
+                        4.0 -
+                        <abbr title="Sanduiche de Sorvete">
+                            Ice Cream Sandwich
+                        </abbr>
+                    </li>
+
+                    <li>
+                        4.1 -
+                        <abbr title="Jujuba">
+                            Jelly Bean
+                        </abbr>
+                    </li>
+
+                    <li>
+                        4.4 -
+                        <abbr title="Kitkat">
+                            KitKat
+                        </abbr>
+                    </li>
+
+                    <li>
+                        5.0 -
+                        <abbr title="">
+                            Lolipop
+                        </abbr>
+                    </li>
+
+                    <li>
+                        6.0 -
+                        <abbr title="Marshmallow">
+                            Marshmallow
+                        </abbr>
+                    </li>
+
+                    <li>
+                        7.0 -
+                        <abbr title="Torrone">
+                            Nougat
+                        </abbr>
+                    </li>
+
+                    <li>
+                        8.0 -
+                        <abbr title="Oreo">
+                            Oreo
+                        </abbr>
+                    </li>
+
+                    <li>
+                        9.0 -
+                        <abbr title="Torta">
+                            Pie
+                        </abbr>
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    Infelizmente, o <strong>Android Q</strong> não existiu,
+                    pois o Google resolveu pôr fim a essa divertida prática.
+                </p>
+
+
+                <!--
+                    Outro link.
+
+                    Aqui você não colocou class="externo",
+                    então o símbolo que você criou no CSS
+                    não aparecerá nesse link.
+                -->
+
+                <p>
+
+                    Acesse aqui o site
+
+                    <a
+                        href="https://developer.android.com/about/versions?hl=pt-br"
+                        target="_blank"
+                        class="externo"
+                    >
+                        Android History
+                    </a>
+
+                    para conhecer a sequência das versões.
+                </p>
+
+            </aside>
+
+
+            <!-- ================= FINAL DO ARTIGO ================= -->
+
+            <p>
+                Então é isso! Espero que você tenha gostado do nosso
+                artigo com essa curiosidade sobre o sistema
+                <strong>Android</strong> e seu simpático mascote.
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <!--
+            <footer> representa o rodapé da página.
+
+            Normalmente usamos para:
+            - autor
+            - copyright
+            - contatos
+            - links
+            - informações finais
+        -->
+
+
+        <p>
+
+            Site criado por
+
+            <a
+                href="https://gustavoguanabara.github.io/"
+                target="_blank"
+            >
+                Gustavo Guanabara
+            </a>
+
+            pra o
+
+            <a
+                href="https://www.youtube.com/cursoemvideo"
+                target="_blank"
+            >
+                CursoemVideo
+            </a>
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

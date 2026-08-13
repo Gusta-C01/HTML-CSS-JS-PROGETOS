@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+   
+    <!-- MP3 WAV OGG -->
+     <audio preload="metadata"autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/mpeg">
+        <!-- Aqui a ordem tbm é importante, ele vai tentando carregar o arquivo de cima pra baixo, primiro vai ver se o mp3 é compativel, depois o ogg e depois o wav-->
+        <p>infelismente seu navegador não consegue reproduziu áudio. <a href="clique aqui para baixar o arquivo MP3"></a></p>
+     </audio>
+</body>
+</html>
+<!-- Lembrar da ordem, os menores, quanto menor mais em cima, quanto maior mais pra baixo, do menor pro maior-->

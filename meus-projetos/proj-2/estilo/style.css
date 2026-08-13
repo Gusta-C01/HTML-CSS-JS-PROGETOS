@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+:root{
+     --cor-princiopal: rgb(92, 205, 55);
+     --cor-destaqe: #ffcc00;
+     --cor-fundo: rgb(223, 193, 21);
+
+}
+
+*{
+    margin: 0px; /* Remove a margem padrão de todos os elementos */
+    padding: 0px; /* Remove o espaçamento interno padrão de todos os elementos */ 
+}
+
+body{
+    background-color: var(--cor-fundo)
+}
+
+header {
+    background-color:var(--cor-princiopal);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.588);
+    background-image: linear-gradient(to bottom, var(--cor-princiopal), var(--cor-fundo)); /* Cria um degrade no header, Bottom = Começa em cima e vai pra baixo. */
+}
+
+header > p {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+}
+
+nav {
+    background-color: #2ea908;
+    padding: 10px;
+    
+}
+
+nav > a {
+    transition: .5s; /* Faz a mudança de hover acontecer suave em 0,5 segundo */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+nav > a:hover{ /* mexendo no hover(mudança de cor quando passa em cima) do A(trasforma a palavra em link)  do NAV*/
+    color: rgb(206, 12, 12);
+}
+
+main {
+    min-width: 300px; /* O main não ficara menor que 300px */
+    max-width: 1000px; /* O main não ficara maior que 1000px */
+    margin: auto; /* centraliza o main */
+    margin-bottom: 30px; /* Espaço abaixo do main */
+    padding: 30px; /* Espaço interno */
+    background-color: rgb(85, 172, 85);
+}
+
+main p {
+    text-align: center; /* Centraliza o texto */
+    text-indent: 30px; /* Cria um espaço no começo do paragrafo */
+    line-height: 1.5em; /* Aumenta o espaço entre as linhas */
+    font-size: 1em; /* Define o tamanho do texto */
+}
+
+main img { /* Tamanho da imagem no MAIN */
+    /* width: 350px; tenta deixar com 350px */
+    width: 100%;/* usa toda a largura disponivel, então se o espaço diminui a imagem tbm vai RESPONSIVIDADE*/
+    max-width: 500px; /* A imagem não passa de 500px de largura. */
+    
+}
+
+main img.pequena { /*CLASS pequena !!!*/
+   max-width: 350px;
+   display: block; /*transforma a imagem em um elemento de bloco, o que permite o margin: auto funcionar para centralização. */
+   margin: auto; /*distribui automaticamente o espaço dos lados e centraliza a imagem. */
+}
+
+main > article {
+    padding: 20px; /* Seleciona o article que esta diretamente dentro do main */
+}
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+a:hover{
+    text-decoration: underline; /* Coloca o sublinhado quando passar o mause */
+}
+
+aside{
+    background-color: #08a918; /* cor de fundo do inside */
+    padding: 15px; /* O tamanho da area em volta (Padding) */
+    border-radius: 10px ; /* arredonda as bordas do padding, posso mexer em cada lado tbm individual, tipo 10px 20px 30px 40px */
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3); /* 5px→deslocamento horizontal 5px → deslocamento vertical 8px → desfoque rgba → cor/transparência da sombra */
+}
+
+footer{
+   background-color: #93c799;
+   padding: 3px;
+}

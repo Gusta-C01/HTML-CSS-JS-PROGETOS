@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+header{
+    background-color: rgba(49, 68, 138, 0.714);
+}
+
+nav {
+    background-color: rgba(0, 255, 251, 0.455);
+}
+
+main {
+    background-color: rgb(46, 159, 114);
+}
+img {
+    max-width: 350px;
+}
+
+body {
+    background-color: chartreuse;
+}
+footer{
+    background-color: rgb(43, 226, 214);
+}
+img.pequena{
+    max-width: 50px ;
+}
